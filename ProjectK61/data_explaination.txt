@@ -1,0 +1,22 @@
+===== File data/data.csv
+Sử dụng file data/data.csv để kiểm thử chương trình, đây là file dữ liệu được sinh ra từ data_generating.py dựa theo phân phối xác suất của dữ liệu thực tế của công ty Philips.
+Phân phối xác suất này lấy tại model download ở http://www.eecs.qmul.ac.uk/~norman/Models/BN_Model_PROMISE.html
+Sử dụng phần mềm Agenarisk (miễn phí) download tại: http://www.agenarisk.com/products/free_download.shtml
+Cách sử dụng phần mềm: Mở model đã download, chuột phải vào node của model để xuất file csv chứa phân bố xác suất (như trong thư mục data/).
+
+TQ: Testing quality
+DPQ: Development process quality
+C: Complexity
+OU: Operation usage
+
+NDI: New defects inserted
+RDP: Residual defects pre
+DFT: Defects found in testing
+DFO: Defects found in operation
+
+DI: Defects inserted = RDP + NDI
+RD: Residual defects post = DI - DFT
+
+===== File fisrm.csv
+File dữ liệu cũ được sử dụng trong chương trình previous_version.py. Đây là mô hình tĩnh với 3 time frame cho việc dự đoán số lỗi của phần mềm. Dữ liệu tự sinh này không tốt so với data/data.csv -> tập trung sử dụng dữ liệu data.csv.
+Sau khi xây dựng mô hình Bayesian động đối với dữ liệu data/data.csv, có thể biến đổi dữ liệu firsm.csv để phù hợp so sánh các mô hình.
