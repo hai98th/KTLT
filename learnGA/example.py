@@ -1,5 +1,5 @@
 geneSet = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-target = "Hello World"
+target = "Chao cac ban"
 
 import random
 import datetime
@@ -48,6 +48,7 @@ while True:
         break
     bestFitness = childFitness
     bestParent = child
+
 
 plt.plot(times, error)
 plt.title("Error")
